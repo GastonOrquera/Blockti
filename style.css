@@ -7,14 +7,6 @@
     font-family: var(--font-primary);
 }
 
-/* 
-#3a948d
-#b1d7be
-#81d1ae
-#51cb9e
-#21c58f 
-*/
-
 :root {
     --font-primary: 'Lemonade Farmhouse', sans-serif;
     /* --background-point: #3E3E3E; */
@@ -50,11 +42,8 @@ header {
     letter-spacing: 1px;
 }
 
-img {
-    object-fit: cover;
-}
-
 main {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: max-content;
@@ -62,16 +51,6 @@ main {
     background-color: #3d2d67;
     justify-content: center;
 }
-
-/* ⫸ */
-
-/* h1 {
-    background-color: var(--background-point);
-    padding: 2rem;
-    color: #DCD3BF;
-    font-size: var(--f-size-h1);
-    letter-spacing: 2px;
-} */
 
 h2 {
     color: #3d2d67;
@@ -128,8 +107,12 @@ ul {
     content: '2 - ';
 }
 
-.li-1:last-of-type:before {
+.ol-d .li-1:last-of-type:before {
     content: '3 - ';
+}
+
+.ol-1 .li-1:last-of-type:before {
+    content: '2 - ';
 }
 
 
@@ -146,10 +129,99 @@ ul {
     margin-right: .4rem;
 }
 
+
+
 .diagrama {
     height: 40rem;
     object-fit: cover;
     background-color: #181818;
     padding: 2rem;
     border-radius: 1rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.p-2 {
+    display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    .box-integrantes {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4px;
+        height: 24px;
+        width: 24px;
+        padding: .2rem;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        height: 2px;
+        width: 18px;
+        background-color: #DCD3BF
+    }
+
+    ol,
+    ul {
+        margin-left: 0;
+    }
+
+    .p-1 {
+        display: none;
+    }
+
+    .p-2 {
+        display: block;
+    }
+
+    .box-integrantes.active {
+        display: flex;
+        position: absolute;
+        background-color: var(--background-point);
+        top: 6.9rem;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        justify-content: start;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .li-1 {
+
+        margin-left: -.4rem;
+    }
+
+    .li-2 {}
+
+    .box-integrantes hr {
+        display: none;
+    }
+
+    .box-points {
+        padding: 1rem;
+    }
+
+    .diagrama {
+        height: max-content;
+        width: 100%;
+        object-fit: contain;
+        padding: 1rem;
+    }
+
+
 }
