@@ -23,7 +23,6 @@ header {
     padding: 2rem;
     display: flex;
     align-items: center;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -151,6 +150,7 @@ ul {
 
     header {
         padding: 1rem;
+        align-items: center;
     }
 
     .box-integrantes {
@@ -159,13 +159,10 @@ ul {
 
     .hamburger {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         gap: 4px;
         height: 24px;
         width: 24px;
-        padding: .2rem;
         cursor: pointer;
     }
 
@@ -192,7 +189,7 @@ ul {
         display: flex;
         position: absolute;
         background-color: var(--background-point);
-        top: 6.9rem;
+        top: 4rem;
         left: 0;
         width: 100%;
         padding: 2rem;
@@ -202,7 +199,7 @@ ul {
     }
 
     .li-1 {
-
+        width: fit-content;
         margin-left: -.4rem;
     }
 
@@ -214,6 +211,11 @@ ul {
 
     .box-points {
         padding: 1rem;
+    }
+
+    .logo {
+        height: max-content;
+        width: 12rem;
     }
 
     .diagrama {
