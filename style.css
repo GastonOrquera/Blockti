@@ -124,9 +124,14 @@ ul {
     content: '1 - ';
 }
 
-.li-1:last-of-type:before {
+.ol-d .li-1:nth-last-child(2):before {
     content: '2 - ';
 }
+
+.li-1:last-of-type:before {
+    content: '3 - ';
+}
+
 
 .li-2 {
     margin-top: 1rem;
@@ -146,4 +151,5 @@ ul {
     object-fit: cover;
     background-color: #181818;
     padding: 2rem;
+    border-radius: 1rem;
 }
