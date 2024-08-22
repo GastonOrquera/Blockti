@@ -1,0 +1,149 @@
+@import url('https://fonts.cdnfonts.com/css/lemonade-farmhouse');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+}
+
+/* 
+#3a948d
+#b1d7be
+#81d1ae
+#51cb9e
+#21c58f 
+*/
+
+:root {
+    --font-primary: 'Lemonade Farmhouse', sans-serif;
+    /* --background-point: #3E3E3E; */
+    --background-point: #3d2d67;
+    --background-point-result: #dcd3bf;
+    --f-size-h1: 2.2rem;
+    --f-size-h2: 1.8rem;
+    --f-size-h3: 1.6rem;
+    --p-size: 1.5rem;
+    --color-font: rgb(110, 140, 238);
+}
+
+header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-integrantes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box-integrantes a {
+    text-decoration: none;
+}
+
+.box-integrantes h3 {
+    color: #e7decb;
+    letter-spacing: 1px;
+}
+
+img {
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+
+    background-color: #3d2d67;
+    justify-content: center;
+}
+
+/* ⫸ */
+
+/* h1 {
+    background-color: var(--background-point);
+    padding: 2rem;
+    color: #DCD3BF;
+    font-size: var(--f-size-h1);
+    letter-spacing: 2px;
+} */
+
+h2 {
+    color: #3d2d67;
+    font-size: var(--f-size-h2);
+    margin-bottom: 1rem;
+}
+
+hr {
+    border-color: rgb(110, 140, 238);
+}
+
+h3 {
+    font-size: var(--f-size-h3);
+    color: #181818;
+}
+
+.box-points>h3:last-of-type {
+    /* border-bottom: 2px solid var(--color-font); */
+    width: max-content;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: var(--p-size);
+    color: #181818;
+}
+
+.box-points {
+    background-color: var(--background-point-result);
+    padding: 2rem;
+}
+
+ol,
+ul {
+    margin-left: 1rem;
+    font-size: var(--f-size-h3);
+}
+
+.li-1 {
+    list-style: none;
+    margin: .4rem 0;
+    color: #DCD3BF;
+    background-color: #3d2d67;
+    padding: .4rem .6rem;
+    width: max-content;
+    border-radius: .4rem;
+}
+
+.li-1:before {
+    content: '1 - ';
+}
+
+.li-1:last-of-type:before {
+    content: '2 - ';
+}
+
+.li-2 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    list-style: none;
+}
+
+.li-2:before {
+    content: '⪢';
+    color: #3d2d67;
+    font-size: 1rem;
+    margin-right: .4rem;
+}
+
+.diagrama {
+    height: 40rem;
+    object-fit: cover;
+    background-color: #181818;
+    padding: 2rem;
+}
