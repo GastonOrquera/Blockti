@@ -161,6 +161,19 @@ ul {
         display: none;
     }
 
+    .box-integrantes.active {
+        display: flex;
+        position: absolute;
+        background-color: var(--background-point);
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        justify-content: start;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -189,25 +202,12 @@ ul {
         display: block;
     }
 
-    .box-integrantes.active {
-        display: flex;
-        position: absolute;
-        background-color: var(--background-point);
-        top: 4rem;
-        left: 0;
-        width: 100%;
-        padding: 2rem;
-        justify-content: start;
-        flex-direction: column;
-        gap: 2rem;
-    }
+
 
     .li-1 {
         width: fit-content;
         margin-left: -.4rem;
     }
-
-    .li-2 {}
 
     .box-integrantes hr {
         display: none;
